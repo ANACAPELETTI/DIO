@@ -40,31 +40,40 @@ Exemplo 2
 
 SOLUÇÃO ABAIXO:
 """
+salario = int(input())
 
-salario = int(input()) 
-if salario <= 600.00:
-  s = salario * 1.17
-  r = s - salario
-  p = 17
-elif salario >= 600.01 and salario <= 900.00:
-  s = salario * 1.13
-  r = s - salario
-  p = 13
-elif salario >= 900.01 and salario <= 1500.00:
-  s = salario * 1.12
-  r = s - salario
-  p = 12
-elif salario >= 1500.01 and salario <= 2000.00:
-  s = salario * 1.10
-  r = s - salario
-  p = 10
-elif salario > 2000.01:
-  s = salario * 1.05
-  r = s - salario
-  p = 5
-
-salString = str(s)
-novoSal = salString.split('.')
-reString = str(r)
-novoRe = reString.split('.')
-print(f"Novo salario: {novoSal[0]},00 Reajuste ganho: {novoRe[0]},00 Em percentual: {p} %")
+if salario <= 600:
+  percentual = 17
+  reajuste = (salario/100) * percentual
+  novo_salario = (salario/100) * percentual + salario
+  print('Novo salario:',"{:.2f}".format(novo_salario))
+  print('Reajuste ganho:',"{:.2f}".format(reajuste))
+  print('Em percentual: {} %'.format(percentual))
+elif salario <= 900:
+  percentual = 13
+  reajuste = (salario/100) * percentual
+  novo_salario = (salario/100) * percentual + salario
+  print('Novo salario:',"{:.2f}".format(novo_salario))
+  print('Reajuste ganho:',"{:.2f}".format(reajuste))
+  print('Em percentual: {} %'.format(percentual))
+elif salario <= 1500:
+  percentual = 12
+  reajuste = (salario/100) * percentual
+  novo_salario = (salario/100) * percentual + salario
+  print('Novo salario:',"{:.2f}".format(novo_salario))
+  print('Reajuste ganho:',"{:.2f}".format(reajuste))
+  print('Em percentual: {} %'.format(percentual))
+elif salario <= 2000:
+  percentual = 10
+  reajuste = (salario/100) * percentual
+  novo_salario = (salario/100) * percentual + salario
+  print('Novo salario:',"{:.2f}".format(novo_salario))
+  print('Reajuste ganho:',"{:.2f}".format(reajuste))
+  print('Em percentual: {} %'.format(percentual))
+else:
+  percentual = 5
+  reajuste = (salario/100) * percentual
+  novo_salario = (salario/100) * percentual + salario
+  print('Novo salario:',"{:.2f}".format(novo_salario))
+  print('Reajuste ganho:',"{:.2f}".format(reajuste))
+  print('Em percentual: {} %'.format(percentual))

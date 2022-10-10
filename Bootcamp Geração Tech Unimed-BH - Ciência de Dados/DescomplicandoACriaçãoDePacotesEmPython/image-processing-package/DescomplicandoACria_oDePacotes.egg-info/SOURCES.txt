@@ -1,0 +1,14 @@
+README.md
+setup.py
+DescomplicandoACria_oDePacotes.egg-info/PKG-INFO
+DescomplicandoACria_oDePacotes.egg-info/SOURCES.txt
+DescomplicandoACria_oDePacotes.egg-info/dependency_links.txt
+DescomplicandoACria_oDePacotes.egg-info/requires.txt
+DescomplicandoACria_oDePacotes.egg-info/top_level.txt
+image_processing/__init__.py
+image_processing/processing/__init__.py
+image_processing/processing/combination.py
+image_processing/processing/transformation.py
+image_processing/utils/__init__.py
+image_processing/utils/io.py
+image_processing/utils/plot.py

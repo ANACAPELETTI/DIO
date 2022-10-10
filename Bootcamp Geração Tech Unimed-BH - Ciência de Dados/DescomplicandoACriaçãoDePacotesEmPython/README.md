@@ -42,7 +42,7 @@ O pacote image_procesing é usado para:
 Utilize o gerenciador de pacotes [pip](https://pip.pypa.io/en/stable/) para instalar o image procesing package.
 
 ```bash
-pip install image_processing
+pip install DescomplicandoACria-oDePacotes
 ```
 
 ## 🕹️ Comandos para criar o pacote:
